@@ -1,0 +1,5 @@
+void draw(){
+ellipse(Xship1, Yship1, 20, 20);
+ellipse(Xship2, Yship2, 20, 20);
+
+}
