@@ -1,12 +1,12 @@
-int ship1;
-int ship2;
+int Yship1;
+int Yship2;
 
 void draw(){
 
-if(ship1=0){
-ship1=600;
+if(Yship1=0){
+Yship1=600;
 }
 
-if(ship2=0){
-ship2=600;
+if(Yship2=0){
+Yship2=600;
 }
