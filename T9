@@ -1,0 +1,14 @@
+void keyPressed() {
+    if (keyCode == UP) {
+      Yship2= Yship2-3;
+    }
+    if (keyCode == DOWN) {
+      Yship2= Yship2+3;
+    }
+    
+     if (key == 'w') {
+      Yship1= Yship1-3;
+    }
+    if (key == 's') {
+      Yship1= Yship1+3;
+    }
