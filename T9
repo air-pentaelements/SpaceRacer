@@ -12,3 +12,4 @@ void keyPressed() {
     if (key == 's') {
       Yship1= Yship1+3;
     }
+}
