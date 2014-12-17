@@ -1,0 +1,61 @@
+PImage imgbackground;
+PImage imgship1;
+PImage imgship2;
+
+int score1=0;
+int score2=0;
+
+int Yship1= 550;
+int Yship2= 550;
+
+int Xship1= 225;
+int Xship2= 375;
+
+void setup (){
+  
+  size (600,600);
+   imgbackground = loadImage("background.png");
+  imgship1 = loadImage ("ship1.png");
+  imgship2 = loadImage ("ship2.png");
+}
+
+void draw(){
+  background (imgbackground);
+  
+image(imgship1, Xship1, Yship1);
+image(imgship2, Xship2, Yship2);
+  
+if(Yship1==-50){
+Yship1=550;
+score1= score1+1;
+}
+
+if(Yship2==-50){
+Yship2=550;
+score2= score2+1;
+}
+
+textSize(15);
+fill(255);
+text(score1, 240, 580);
+fill(255);
+text(score2, 350, 580);
+}
+
+
+
+void keyPressed() {
+    if (keyCode == UP) {
+      Yship2= Yship2-3;
+    }
+    if (keyCode == DOWN) {
+      Yship2= Yship2+3;
+    }
+    
+     if (key == 'w') {
+      Yship1= Yship1-3;
+    }
+    if (key == 's') {
+      Yship1= Yship1+3;
+    }
+}
