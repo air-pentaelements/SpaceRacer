@@ -1,0 +1,34 @@
+PImage imgasteroid;
+
+int Xline =20;
+int Yline =300;
+
+int Xline2 =580;
+int Yline2 =400;
+
+int Xline3 =20;
+int Yline3 =500;
+
+int Xline4 =580;
+int Yline4 =200;
+
+int Xline5 =20;
+int Yline5 =100;
+
+void setup(){
+imgasteroid = loadImage ("asteroid.png");
+}
+
+void draw(){
+ image(imgasteroid,Xline,Yline);
+ Xline= Xline+2;
+ 
+ image(imgasteroid,Xline2,Yline2);
+  Xline2= Xline2-2;
+ image(imgasteroid,Xline3,Yline3);
+  Xline3= Xline3+2;
+ image(imgasteroid,Xline4,Yline4);
+  Xline4= Xline4-2;
+ image(imgasteroid,Xline5,Yline5);
+  Xline5= Xline5+2;
+  }
